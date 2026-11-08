@@ -1,27 +1,23 @@
-# Benefits and verified evidence
+# Product outcomes & measurement plan
 
-The product enhancements add a repeatable way to investigate ideas, preserve findings, explain results, and review changes. The bounded agent now has initial integration evidence; the next step is to measure whether it improves the owner's experience.
+This page asks whether the product helps users and how I will measure that value. The [supporting evaluations](evaluation.md) examine whether the agent's analysis, evidence checks and controls behave correctly. Passing those checks does not establish a useful product outcome.
 
-[Scored evaluation sheet](evaluation.md): the latest milestone passed 60 focused checks in Replit and completed real Run #46 using the existing historical engine for base/stress modeled replay. Both processed 390 bars with zero trades; the agent abstained. Earlier 32-check validation and three model runs remain documented separately. These establish integration and controls, not trading performance or productivity gains.
+**Observed:** the [Run #47 investigation](agent-walkthrough.md) exposed a misleading aggregate comparison and identified missing evidence before a strategy change. This demonstrates a useful follow-up in one recorded investigation, not repeated reliability or improved strategy performance.
+
+**Intended benefits:** less manual monitoring and research effort, clearer outcome review, and greater control over automated behavior. These remain outcomes to measure; reduced supervision, time savings and improved profitability have not been established.
 
 ## Capability versus user outcome
 
-| Capability in the reviewed work | Intended benefit | How to test the benefit |
+| Capability or workflow | Intended benefit — not yet measured | How I will test the benefit |
 |---|---|---|
 | AI-assisted development | Faster progress from a product question to a testable artifact | Record elapsed time and human effort for comparable tasks, including review and rework |
 | Structured research workflow | Less manual effort investigating an idea | Measure setup time, completion time, and operator intervention |
-| Experiment history | Easier comparison and less repeated investigation | Ask the owner to recover a prior decision and its rationale; measure effort and completeness |
+| Experiment history | Easier comparison and less repeated investigation | Recover a prior decision and its rationale; measure effort and completeness |
 | AI explanations | Faster understanding of a result | Compare against a fixed-format summary on accuracy, usefulness, and review time |
 | Human review and controlled changes | Greater control over automated behavior | Demonstrate eligible, ineligible, approved, and rollback journeys using fictional examples |
 | Monitoring and forward observation | Less need for continuous attention | Measure monitoring minutes, required interventions, and successful recovery over a stated period |
 
 No numerical productivity improvement or reduction in supervision has been established for this case study yet. Any comparison should include task complexity and the effort required to correct AI output.
-
-## Public artifacts that demonstrate judgment
-
-Publish a short journey from a product question to a reviewed proposal, a capability diagram, two author-owned decision narratives, and a demonstration of the review boundary. Use fictional examples for demonstrations and label them clearly.
-
-Show what the user can do and what the PM chose. Keep raw account records, proprietary trading logic, specific research candidates, and financial performance details out of the public package.
 
 ## Strategy evaluation and release criteria
 
@@ -31,12 +27,18 @@ Show what the user can do and what the PM chose. Keep raw account records, propr
 
 | Status | Artifact or measurement | What it establishes |
 |---|---|---|
-| **Available** | Architecture, scored evaluation sheet, retained failures, bounded historical-engine integration and privately checked evidence | Initial implementation and control validation |
+| **Available** | Architecture, supporting evaluations, retained failures, bounded historical-engine integration and the Run #47 walkthrough | Initial implementation, control validation and one observed example of useful investigation |
 | **Next** | Sanitized dashboard walkthrough using fictional groups | The product experience and review boundary |
 | **Next** | Paired personal-review tasks: manual/fixed summary versus agent-assisted review | Review effort, corrections, evidence completeness and time to a decision |
 | **Planned** | Matched-task agent versus capable fixed workflow, equal data/tools/resource constraints | Whether adaptive analysis adds usefulness worth its cost |
-| **Not substantiated here** | Survey findings | Add only after the original survey, recruitment, sample and results are verified |
+| **Discovery conducted** | User interviews, review of Reddit, X and other trading-community discussions, and firsthand trading experience, as described in the [case study](README.md#opportunity-discovery-and-user-research) | Informed the need for trading discipline without continuous screen monitoring; does not establish representative demand or measured product benefit |
 
-For personal-review tasks, predefine comparable tasks and a quality rubric, alternate task order, and record setup, review and correction time. Retain unsuccessful attempts. Model runtime is not human time saved. The primary user is the owner; external adoption is not the success criterion for this stage.
+For personal-review tasks, predefine comparable tasks and a quality rubric, alternate task order, and record setup, review and correction time. Retain unsuccessful attempts. Model runtime is not human time saved. I am the primary user at this stage; external adoption is not yet the success criterion.
+
+## Public evidence and disclosure
+
+The case study, architecture and agent walkthrough show my product decisions and the review boundary. Raw account records, proprietary trading logic and specific research candidates remain private.
+
+**Narrow disclosure exception:** the aggregate figures in the [Run #47 walkthrough](agent-walkthrough.md) are included deliberately to show how an aggregate comparison can mislead and how the agent investigated it. They do not establish profitability, causality or strategy improvement, and do not authorize broader disclosure of private performance data.
 
 A future public demo should use independently generated fictional data. Renaming fields or shuffling real trading outcomes is not treated as a guarantee that strategy information is removed. Public portfolio review is separate from distributing a trading product.
