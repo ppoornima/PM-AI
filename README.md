@@ -1,26 +1,53 @@
-# Poornima — Product judgment in AI and fintech
+# Poornima Peddinti — Product judgment in fintech & AI
 
-I explore how AI can solve practical problems while keeping people informed and in control.
+**Product leader · Former software engineer · Hands-on AI builder**
 
-## Featured case study
+My experience spans consumer credit, developer platforms and distributed systems at PayPal. This portfolio shows how I translate user needs into product choices, build with AI assistance, and evaluate whether the results deserve greater investment or autonomy.
 
-### From an algorithmic trading app to AI-assisted research
+**[Start with the featured case study →](case-studies/spy-decision-system/README.md)** · [Professional background](https://github.com/ppoornima) · [Connect on LinkedIn](https://www.linkedin.com/in/poornimapeddinti/)
 
-A personal question—could I automate personal trading without continuously watching my laptop?—became an opportunity to extend an existing application with research, experiment memory, and human-reviewed changes.
+## AI-assisted trading & research
+**Independent product project · In development · Ongoing research and learnings**
 
-The project combines an existing algorithmic trading app with bounded AI research. A recorded-paper investigation exposed a misleading comparison; a local strategy-and-model evaluation framework now records reproducible experiments and explicit evidence gaps. Current-strategy performance benchmarks remain blocked by data. [Benchmark status](case-studies/spy-decision-system/strategy-model-benchmarks.md).
+### The problem and why I chose it
 
-**Product skills:** problem framing · MVP scoping · AI-assisted development · evaluation · observability · human-in-the-loop design.
+User interviews, trading-community research and firsthand experience pointed to a need: maintain trading discipline without continuous screen monitoring. I chose financial data and trading because an existing application and recorded outcomes gave me a concrete setting to explore automation, investigate decisions and test the limits of AI recommendations.
 
-[Read the case study](case-studies/spy-decision-system/README.md) · [See the architecture](case-studies/spy-decision-system/architecture.md)
+The product aims to follow approved trading rules, monitor positions and help the user learn from outcomes while retaining control over strategy changes.
 
-Independent paper & live-trading project. Core trading strategy private.
+### My ownership and product decisions
 
-## Portfolio structure
+I own problem discovery, MVP scope, architectural choices, evaluation requirements and acceptance decisions, and drive hands-on AI-assisted development.
 
-Each project lives in `case-studies/<project-name>/` with a concise `README.md` covering problem discovery, ownership, decisions and verified outcomes. Supporting pages provide architecture, evaluations, a real walkthrough and a roadmap. Assets live inside the project folder. The root README is the project index; new projects will be added as they are ready.
+- **Prioritize a concrete workflow:** build on the existing application and backtester to connect research to the user's trading decisions.
+- **Set boundaries for autonomy:** separate rules-based execution from model-directed investigation; the research agent cannot place orders or activate strategies.
+- **Require evidence before action:** keep calculations reproducible, record experiments and surface missing data or unsupported conclusions.
+- **Make greater autonomy conditional:** evaluate proposed improvements against baselines and risk limits; require human approval for live release.
 
-Existing `Job Search/` material remains separate from these case studies.
+### What you can inspect today
+
+An implemented research agent selects analysis tools, investigates recorded outcomes and concludes or abstains within defined budgets. A documented investigation exposed a misleading aggregate comparison and identified evidence needed before a strategy change.
+
+Supporting pages distinguish verified behavior from work still underway, including strategy-and-model evaluation and the path from historical evaluation through paper validation to controlled live trading. Improved profitability, reduced supervision and superiority over alternative workflows remain outcomes to demonstrate.
+
+| Explore | What you will find |
+| --- | --- |
+| **[Full case study](case-studies/spy-decision-system/README.md)** | User research, motivation, ownership and consequential product decisions |
+| [Agent investigation](case-studies/spy-decision-system/agent-walkthrough.md) | How a real run questioned an apparent pattern and identified missing evidence |
+| [Evaluation evidence](case-studies/spy-decision-system/evaluation.md) | What was checked, what failed and where evidence remains limited |
+| [Strategy-and-model benchmarks](case-studies/spy-decision-system/strategy-model-benchmarks.md) | Product metrics, implementation status and remaining baseline gaps |
+| [Architecture](case-studies/spy-decision-system/architecture.md) | Agent tools, research workflows and execution boundaries |
+| [Roadmap](case-studies/spy-decision-system/roadmap.md) | Planned experiments, acceptance criteria and progression toward live use |
+
+**Skills demonstrated:** user research · Product strategy and MVP prioritization · AI-assisted development · Agent tool use · LLM evaluation · Human-in-the-loop design · Risk-aware automation
+
+## About this portfolio
+
+This is a living record of product development, experiments and learnings. It contains public case-study documentation; core trading strategies, application code and private data remain private.
+
+Each project lives in `case-studies/<project-name>/`. Supporting pages provide deeper evidence for readers who want to examine the decisions. Existing `Job Search/` material remains separate.
+
+**[Discuss product opportunities on LinkedIn](https://www.linkedin.com/in/poornimapeddinti/)**
 
 ## License and reuse
 
