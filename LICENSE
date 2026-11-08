@@ -1,0 +1,33 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Poornima
+
+The original material in README.md and case-studies/spy-decision-system/
+(including text and diagrams) is licensed under Creative Commons Attribution
+4.0 International, unless an item is explicitly marked otherwise. This notice
+does not relicense pre-existing Job Search/ files or other repository material.
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Full legal terms: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+You may share and adapt the licensed material, including commercially,
+subject to the license terms. Give appropriate credit to Poornima, retain
+supplied notices, link to the material and license, and indicate changes.
+Do not imply endorsement or impose additional restrictions prohibited by
+the license. No warranties are given. The linked legal terms govern;
+this notice is not a replacement for them.
+
+Scope and exclusions
+
+Private trading code, proprietary trading rules and strategies, account
+data, unpublished datasets and raw traces are not included in this release
+or licensed by this notice. Third-party material retains its own terms.
+The original published diagrams, including their editable diagram source,
+are included in the CC BY 4.0 documentation license.
+
+Future code releases
+
+No runnable application, trading engine or agent harness is released here.
+Code that Poornima chooses to publish later will carry a separate MIT
+license in its release directory or repository. This statement does not
+license or authorize access to any current private code.

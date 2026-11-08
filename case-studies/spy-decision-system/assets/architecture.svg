@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160" role="img" aria-labelledby="title desc">
+<title id="title">Before and after: extending the existing Replit trading application</title>
+<desc id="desc">Before: Finnhub and Alpaca connect to an existing Replit Python application, paper execution, and PostgreSQL. After: the same application gains a separate LangGraph research worker, database experiment memory, optional OpenAI explanations, and human-reviewed version changes. Live deployment remains proposed.</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#647d91"/></marker></defs>
+<rect width="1440" height="1160" fill="#f5f7fb"/>
+<text x="40" y="48" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#19334a">Extend the product. Add a learning and review loop.</text>
+<text x="40" y="82" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" fill="#19334a">SPY project • Product architecture • Core trading strategy intentionally private</text>
+<text x="40" y="126" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">BEFORE</text>
+<text x="340" y="126" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#19334a">EXISTING REPLIT PROJECT</text>
+<rect x="340" y="145" width="1060" height="265" rx="12" fill="#edf1f6" stroke="#b4c4d2" stroke-width="2"/>
+<rect x="40" y="165" width="250" height="90" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="56" y="194" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Finnhub</text>
+<text x="56" y="221" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Market context</text>
+<rect x="40" y="290" width="250" height="90" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="56" y="319" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Alpaca</text>
+<text x="56" y="346" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Brokerage + market data</text>
+<rect x="375" y="180" width="285" height="115" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="391" y="209" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Python / Flask app</text>
+<text x="391" y="236" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Dashboard + scheduled work</text>
+<text x="391" y="258" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Private trading capability</text>
+<rect x="725" y="180" width="285" height="115" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="741" y="209" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Paper execution</text>
+<text x="741" y="236" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Orders, fills and monitoring</text>
+<text x="741" y="258" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Broker adapter</text>
+<rect x="1075" y="180" width="290" height="115" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="1091" y="209" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">PostgreSQL</text>
+<text x="1091" y="236" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Trade and market history</text>
+<text x="1091" y="258" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Existing application state</text>
+<path d="M290,210 L375,210" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660,235 L725,235" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1010,235 L1075,235" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M290,335 L868,335 L868,295" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<text x="380" y="375" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#19334a">Opportunity: connect historical evidence to repeatable research and reviewed improvements.</text>
+<text x="40" y="460" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">AFTER</text>
+<text x="340" y="460" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#19334a">SAME REPLIT PROJECT — EXTENDED</text>
+<rect x="340" y="480" width="1060" height="570" rx="12" fill="#edf1f6" stroke="#b4c4d2" stroke-width="2"/>
+<rect x="40" y="530" width="250" height="90" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="56" y="559" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Finnhub</text>
+<text x="56" y="586" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Retained context provider</text>
+<rect x="40" y="645" width="250" height="90" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="56" y="674" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Alpaca</text>
+<text x="56" y="701" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Retained execution provider</text>
+<text x="56" y="723" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Also supplies market data</text>
+<rect x="375" y="530" width="285" height="115" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="391" y="559" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">App + research views</text>
+<text x="391" y="586" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Existing user journey</text>
+<text x="391" y="608" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">NEW: experiment access</text>
+<rect x="725" y="530" width="285" height="115" rx="12" fill="#fff" stroke="#b4c4d2" stroke-width="2"/>
+<text x="741" y="559" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Paper execution</text>
+<text x="741" y="586" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Private strategy retained</text>
+<text x="741" y="608" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Versioned runtime</text>
+<rect x="1075" y="530" width="290" height="115" rx="12" fill="#e5f4ef" stroke="#75a899" stroke-width="2"/>
+<text x="1091" y="559" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Experiment memory</text>
+<text x="1091" y="586" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">PostgreSQL: history + results</text>
+<text x="1091" y="608" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Checkpoints + review events</text>
+<path d="M290,575 L375,575" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M660,588 L725,588" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1010,588 L1075,588" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M290,690 L350,690 L350,670 L868,670 L868,645" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<rect x="375" y="750" width="330" height="130" rx="12" fill="#e5f4ef" stroke="#75a899" stroke-width="2"/>
+<text x="391" y="779" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Research workflow worker</text>
+<text x="391" y="806" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">LangGraph: fixed orchestration</text>
+<text x="391" y="828" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Deterministic evaluation</text>
+<text x="391" y="850" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">No broker credentials</text>
+<rect x="795" y="750" width="265" height="130" rx="12" fill="#e5f4ef" stroke="#75a899" stroke-width="2"/>
+<text x="811" y="779" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Human-in-the-loop</text>
+<text x="811" y="806" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Deterministic eligibility gate</text>
+<text x="811" y="828" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Owner approves or rejects</text>
+<text x="811" y="850" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Review stored in database</text>
+<rect x="1100" y="750" width="265" height="130" rx="12" fill="#e5f4ef" stroke="#75a899" stroke-width="2"/>
+<text x="1116" y="779" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">Release controller</text>
+<text x="1116" y="806" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Approved paper version</text>
+<text x="1116" y="828" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Deterministic safety checks</text>
+<text x="1116" y="850" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Controlled rollback</text>
+<path d="M1220,645 L1220,715 L540,715 L540,750" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<text x="565" y="706" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#19334a">Recorded evidence / prior findings</text>
+<path d="M705,815 L795,815" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1060,815 L1100,815" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1232,750 L1232,695 L970,695 L970,645" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<text x="1000" y="686" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#19334a">Approved change</text>
+<rect x="40" y="790" width="250" height="110" rx="12" fill="#eeedfa" stroke="#a7a1c9" stroke-width="2"/>
+<text x="56" y="819" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#19334a">LLM explanation</text>
+<text x="56" y="846" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">OpenAI API: single call</text>
+<text x="56" y="868" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Advisory, not a tool agent</text>
+<path d="M375,805 L290,805" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+<path d="M290,860 L375,860" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+<path d="M540,880 L540,925 L1385,925 L1385,615 L1365,615" fill="none" stroke="#647d91" stroke-width="2" marker-end="url(#a)"/>
+<text x="620" y="915" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#19334a">Results retained; forward observations inform the next iteration</text>
+<text x="375" y="986" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#19334a">Green = added research / review capabilities. Purple = optional model assistance.</text>
+<text x="375" y="1016" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#19334a">Approval and persistence are application controls; they are not model decisions.</text>
+<text x="40" y="1094" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#19334a">PLANNED NEXT: isolated approved-live and experimental-paper lanes; live promotion is not shown as deployed.</text>
+<text x="40" y="1131" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#19334a">AI-assisted development supports the build. This diagram shows the product runtime, not the coding assistant.</text>
+</svg>
