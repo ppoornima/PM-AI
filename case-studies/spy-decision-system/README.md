@@ -2,28 +2,54 @@
 
 **Product + Engineer · Fintech · Agent architecture · Evals · Human control**
 
-## Problem discovery: my own trading workflow
+## Why this matters: protecting capital and reclaiming time
 
-I investigated my own problem: trading required attention while I was away from my laptop, and reviewing results did not provide a repeatable way to decide which changes deserved testing. This began with firsthand use of my application, followed by inspection of its recorded signals, paper fills and research traces—not external customer interviews.
+> **“Plan your trade and trade your plan.”**
 
-I chose SPY for its high volume and access to low-cost options contracts. Recorded evidence taught me that an apparently useful pattern could be misleading: in Run #47, a market-condition comparison reversed when the agent compared trade directions. Missing historical version tags also meant past outcomes could not reliably describe today's strategy.
+The principle is simple. Following it consistently—while markets move, emotions rise and everyday responsibilities compete for attention—is harder.
 
-## Why this case study
+**The financial stakes are substantial.** SEBI found that **93% of individual equity futures and options traders in India incurred losses during FY2022–FY2024**, with aggregate losses exceeding **₹1.8 trillion over three years**. This illustrates the scale of retail-trading losses in that market; it is not a measure of U.S. SPY outcomes or proof that psychology caused those losses. [SEBI study](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html)
 
-An existing trading application offered a concrete setting to explore **agent autonomy, measurable outcomes and human control**. I could examine the full path from evidence to recommendation, then test where AI should have discretion and where deterministic checks and approval should govern action.
+The personal cost also includes time: hours watching charts, monitoring positions and reviewing decisions. **Time is a resource we cannot replenish.**
 
-The initial goal is usefulness and reliability in my personal workflow. Broader use would follow controlled live validation and the requirements for wider adoption; external adoption is not claimed today.
+My mission is to explore how technology can help people **protect their capital, follow a disciplined process and reclaim time**, while pursuing greater financial independence. I started with my own trading workflow—a problem I cared about enough to build, test and challenge.
 
-## My ownership and product decisions
+## Opportunity discovery and user research
 
-I owned **problem framing, scope, architecture, AI-assisted coding, integration, evaluation requirements and acceptance**. Development began in **Bolt** and continued in **Replit**.
+I conducted **user interviews and reviewed discussions and concerns on Reddit, X and other trading communities**, alongside examining my own trading experience.
 
-| Insight from the investigation | Product decision |
+The need I identified was **maintaining trading discipline without depending on continuous screen monitoring**. This shaped an opportunity to combine approved-rule execution with evidence-based research and clear human control.
+
+My product question became:
+
+> **Can I build a system that follows an approved trading plan while I am away, helps me learn from outcomes, and earns permission to take greater responsibility through measurable evidence?**
+
+Supplemental income is part of the motivation. The product must first demonstrate that its decisions, execution and risk controls deserve trust.
+
+## Why trading, why SPY, and why this project?
+
+I chose SPY for its **high trading volume and access to low-cost options contracts**. My existing algorithmic trading application provided market inputs, signal generation, execution rules and recorded outcomes.
+
+That foundation made this a concrete setting to explore **agent autonomy, measurable outcomes and human control**. I could investigate actual decisions, compare proposed changes with existing strategies and observe where automation needed boundaries.
+
+The progression is **historical evaluation → paper validation → controlled live trading**. Paper trading is a validation stage on the path toward live use. Consistent income, improved profitability and reduced supervision remain outcomes to demonstrate.
+
+## How discovery shaped my product decisions
+
+| Problem or insight | Product decision |
 |---|---|
-| Aggregate outcomes can hide differences in trade mix | Let the agent choose follow-up analyses; compute results deterministically. |
-| Historical outcomes lack complete version attribution | Version strategies and evidence; block unsupported baseline claims. |
-| A newer model is not evidence of better trading research | Compare frozen proposals against existing strategies under matched evaluation conditions. |
-| Trading actions have greater consequences than research | Separate research from execution; retain human approval for live release. |
+| Continuous monitoring consumes attention | Automate approved rules and surface exceptions requiring review |
+| Consistency alone cannot make a weak strategy effective | Evaluate strategy performance independently, including costs and downside |
+| Historical patterns can support misleading conclusions | Let AI investigate alternatives; keep calculations reproducible |
+| Proposed improvements need a fair comparison | Freeze strategy versions and compare them against existing baselines |
+| More powerful models may cost more without improving outcomes | Compare proposal quality, trading results, tokens, latency and cost |
+| Delegating execution should preserve accountability | Keep permissions explicit and require human approval for live release |
+
+## My ownership
+
+I owned **problem discovery, scope, architecture, evaluation requirements and acceptance decisions**, and drove AI-assisted implementation—starting in **Bolt** and continuing in **Replit**.
+
+My role as **Product + Engineer** is to connect the mission to evidence: decide what is worth automating, build the experience, measure whether it helps, and keep unsupported conclusions from becoming trading actions.
 
 ## 1. Existing: my algorithmic trading application
 
